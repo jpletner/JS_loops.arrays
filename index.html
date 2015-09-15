@@ -12,9 +12,18 @@
 
 
 
-<input type='text' id='loopBox'>
-<input type='button' value="Submit" onclick="storage()">
-<p id="demo"></p>
+<p>Click the button to convert display the mailing list.</p>
+
+<button onclick="myFunction()">Print Mailing List</button>
+
+<p id="list"></p>
+
+<p>Add new name to mailing list:<p> 
+<input type="text" placeholder"Enter name" id="newName">
+<input type="button" value="Add Name" onclick="addName()">
+<input type="button" value="Add Name and Reprint Mailing List" onclick="addNameReprint()">
+
+<p id="newList"></p>
 
 <script src='script.js'></script>
 </body>

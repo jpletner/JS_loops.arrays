@@ -24,9 +24,26 @@ function changeClass() {
   }
 }
 
+var mailingList = ["Bob", "Joe", "Sally", "Katie"];
+
+function myFunction() {
+	mailingList.toString();
+  document.getElementById("list").innerHTML = mailingList;
+}
+
+function addName() {
+	mailingList.push(document.getElementById("newName").value);
+}
+
+function addNameReprint() {
+	mailingList.push(document.getElementById("newName").value);
+	mailingList.toString();
+  document.getElementById("newList").innerHTML = mailingList;
+}
 
 
-function loop (array) {
+
+/*function loop (array) {
   for (var i = 0; i < array.length; i++) {
       alert (array[i]);
     }
@@ -34,7 +51,7 @@ function loop (array) {
 
 	var myStringArray = ["Hello","World", "Oh", "My", "God"];
 
-loop(myStringArray);
+	loop(myStringArray);*/
 
 
 /*
@@ -53,10 +70,10 @@ loop(myStringArray);
 document.getElementById("demo").innerHTML == newData.toString();
 */
 
-function storage () {
+/*function storage () {
  	var newData =
         document.getElementById('loopBox').value;
 	var oldData =
         document.getElementById('demo');
 oldData.innerHTML = newData;
-}
+}*/
