@@ -1,7 +1,17 @@
-.top {
-  color: red;
+h1 {
+	font-family: cursive;
+	color: #fff;
+	width: 100%;
+	background-color: darkgrey;
+	text-align: center;
 }
 
-.bottom {
-  font-size: 10em;
+.red {
+  color: red;
+	font-family: sans-serif;
+}
+
+.blue {
+  color: blue;
+	font-family: sans-serif;
 }

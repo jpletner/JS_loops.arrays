@@ -1,3 +1,4 @@
+/*Update Header Text*/
 function updateHeader() {
  	var newHeader =
         document.getElementById('myTextBox').value;
@@ -10,20 +11,18 @@ oldHeader.innerHTML = newHeader;
 }
 
 
-
-
-
-
+/*Change Header Class*/
 function changeClass() {
-  if ( document.getElementById('header').className == "" ) {
-    document.getElementById('header').className="bottom";
-  } else if (document.getElementById('header').className=="bottom") {
-    document.getElementById('header').className="top";
-  } else if(document.getElementById('header').className=="top") {
+  if (document.getElementById('header').className == "" ) {
+    document.getElementById('header').className = "red";
+  } else if (document.getElementById('header').className == "red") {
+    document.getElementById('header').className = "blue";
+  } else {
     document.getElementById('header').className = "";
   }
 }
 
+/*Update Mailing List*/
 var mailingList = ["Bob", "Joe", "Sally", "Katie"];
 
 function myFunction() {
@@ -41,39 +40,19 @@ function addNameReprint() {
   document.getElementById("newList").innerHTML = mailingList;
 }
 
-
-
-/*function loop (array) {
+/*Use loop to display array data*/
+function loop (array) {
   for (var i = 0; i < array.length; i++) {
-      alert (array[i]);
+   document.getElementById("omg").innerHTML = array;
     }
   }
 
-	var myStringArray = ["Hello","World", "Oh", "My", "God"];
+	var myStringArray = ["Hello","World", "Oh", "My", "God","I","Did","It!"];
 
-	loop(myStringArray);*/
+	loop(myStringArray);
 
 
-/*
-  var newData = ["Jenny", "Toby"];
 
-  function storage () {
-    data = newData.push(document.getElementById("loopBox").value);
+	
+	
 
-    function loop (data) {
-      for (var i = 0; i < data.length; i++) {
-          alert (data[i]);
-        }
-      }
-};
-
-document.getElementById("demo").innerHTML == newData.toString();
-*/
-
-/*function storage () {
- 	var newData =
-        document.getElementById('loopBox').value;
-	var oldData =
-        document.getElementById('demo');
-oldData.innerHTML = newData;
-}*/
