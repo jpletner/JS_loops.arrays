@@ -51,8 +51,31 @@ function loop (array) {
 
 	loop(myStringArray);
 
+/*looping through operators*/
 
+var number1 = 7;
+var number2 = 3;
+var plus = "+";
+var math = {
+  '+': function (number1, number2) { return number1 + number2 },
+  '-': function (number1, number2) { return number1 - number2 },
+  '/': function (number1, number2) { return number1 / number2 },
+  '*': function (number1, number2) { return number1 * number2 },
+  '%': function (number1, number2) { return number1 % number2 }
+}
+/*var listOp = ['+','-','/','*','%'];
 
-	
-	
+var execute = (number1 + listOp[1] + number2 + " = " + math[listOp[1]](number1 , number2))
+document.getElementById("pracOperLoop").innerHTML = execute;*/
 
+function loopOper(array) {
+  for(var i = 0; i < array.length; i++) {
+  var execute = (number1 + " " + array[i] + " " +  number2 + " = " + math[array[i]](number1 , number2)+"; ");
+	document.write(execute);
+	document.write("<br>")
+  }
+}
+
+var mathList = ['+','-','/','*','%'];
+
+loopOper(mathList);
